@@ -24,7 +24,8 @@ h3 {
   font-size: 1.25rem;
 }
 
-p {
+p,
+a {
   font-weight: #{map-get($font-weights, 'regular')};
   color: var(--color-text-2);
   font-weight: 1rem;
