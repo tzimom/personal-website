@@ -1,0 +1,25 @@
+.wiggle-icon:hover {
+  animation: wiggle 400ms ease;
+}
+
+@keyframes wiggle {
+  from {
+    transform: none;
+  }
+
+  30% {
+    transform: rotate(10deg);
+  }
+
+  60% {
+    transform: rotate(-5deg);
+  }
+
+  90% {
+    transform: rotate(2deg);
+  }
+
+  to {
+    transform: none;
+  }
+}

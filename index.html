@@ -5,6 +5,10 @@
     <meta charset="utf-8" />
 
     <link rel="stylesheet" href="/css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
 
     <script src="/js/navigation.js"></script>
     <script src="/js/darkmode.js"></script>
@@ -13,40 +17,45 @@
   </head>
   <body>
     <nav class="main-nav">
-      <p class="logo">Tzimom</p>
+      <div class="container-large">
+        <p class="logo">Tzimom</p>
 
-      <img
-        class="light"
-        src="/assets/icons/moon.svg"
-        alt="Dark Mode"
-        onclick="toggleDarkmode();"
-      />
-      <img
-        class="dark"
-        src="/assets/icons/sun.svg"
-        alt="Light Mode"
-        onclick="toggleDarkmode();"
-      />
-    </nav>
-
-    <div class="container">
-      <section class="section head">
         <img
-          class="head__image"
-          src="http://res.tzimom.de/images/simple-logo/transparent/blue.svg"
-          alt=""
+          class="wiggle-icon light"
+          src="/assets/icons/moon.svg"
+          alt="Dark Mode"
+          onclick="toggleDarkmode();"
         />
+        <img
+          class="wiggle-icon dark"
+          src="/assets/icons/sun.svg"
+          alt="Light Mode"
+          onclick="toggleDarkmode();"
+        />
+      </div>
+    </nav>
+    <main>
+      <div class="container-small">
+        <section class="section head">
+          <img
+            class="head__image"
+            src="http://res.tzimom.de/images/simple-logo/transparent/blue.svg"
+            alt=""
+          />
 
-        <div class="head__body">
-          <h1 class="page-titles">Tzimom</h1>
-          <h2>Fullstack developer</h2>
-          <p>
-            High level experience in web design and backend server structure and
-            development.
-          </p>
-          <a class="button" href="#contact">Contact Me</a>
-        </div>
-      </section>
-    </div>
+          <div class="head__body">
+            <h1 class="page-titles">Tzimom</h1>
+            <h2>Fullstack developer</h2>
+            <p>
+              High level experience in web design and backend server structure
+              and development.
+            </p>
+            <a class="button" href="#contact">
+              <i class="uil uil-message"></i> Contact Me
+            </a>
+          </div>
+        </section>
+      </div>
+    </main>
   </body>
 </html>

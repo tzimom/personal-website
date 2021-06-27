@@ -5,13 +5,15 @@
   right: 0;
   z-index: 10;
 
-  padding: 0.75rem 1.5rem;
+  padding: 0.75rem 0;
   background-color: var(--color-background);
   box-shadow: 0 0 15px rgba($color: #000000, $alpha: 0.1);
 
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 
   .logo {
     font-weight: #{map-get($font-weights, 'medium')};
@@ -25,6 +27,12 @@
 
 @media (min-width: 800px) {
   .main-nav {
-    position: static;
+    top: 0;
+    bottom: auto;
+    padding: 1.75rem 0;
+
+    .logo {
+      font-size: 1.25rem;
+    }
   }
 }

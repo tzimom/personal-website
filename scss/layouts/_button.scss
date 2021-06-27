@@ -1,13 +1,37 @@
 .button {
-  display: inline-block;
-  padding: 0.8em 1.5em;
+  --border-radius: 0.5rem;
 
-  color: #ffffffcc;
+  display: inline-block;
+  padding: 1em 1.5em;
+
+  color: #ffffff;
   font-size: 1rem;
   font-weight: map-get($font-weights, 'medium');
 
   border: none;
   outline: none;
   background-color: var(--color-primary-1);
-  border-radius: 0.75em;
+  border-radius: var(--border-radius);
+
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: 10;
+
+    border-radius: var(--border-radius);
+    transition: background-color 200ms ease;
+  }
+
+  &:hover::before {
+    background-color: #00000022;
+  }
+}
+
+@media (min-width: 800px) {
+  .button {
+    font-size: 1.25rem;
+  }
 }

@@ -6,7 +6,7 @@
 
   &__image {
     grid-area: image;
-    justify-self: center;
+    place-self: center;
 
     height: 15rem;
   }
@@ -16,6 +16,28 @@
 
     p {
       margin: 1em 0;
+    }
+  }
+}
+
+@media (min-width: 1000px) {
+  .head {
+    grid-template-columns: 1fr auto;
+    grid-template-rows: 1fr;
+    grid-template-areas: 'body image';
+
+    margin: 20vh 0;
+
+    &__image {
+      height: 25rem;
+    }
+
+    &__body {
+      align-self: center;
+
+      p {
+        margin: 1em 0 2em;
+      }
     }
   }
 }
