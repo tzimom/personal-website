@@ -6,8 +6,18 @@ body {
 
 h1 {
   font-weight: #{map-get($font-weights, 'bold')};
+  color: var(--color-text-1);
+  font-size: 2rem;
+}
+
+h2 {
+  font-weight: #{map-get($font-weights, 'medium')};
+  color: var(--color-text-3);
+  font-size: 1.25rem;
 }
 
 p {
   font-weight: #{map-get($font-weights, 'regular')};
+  color: var(--color-text-2);
+  font-weight: 1rem;
 }

@@ -7,19 +7,46 @@
     <link rel="stylesheet" href="/css/main.css" />
 
     <script src="/js/navigation.js"></script>
+    <script src="/js/darkmode.js"></script>
 
     <title>Home | Tzimom</title>
   </head>
   <body>
     <nav class="main-nav">
       <p class="logo">Tzimom</p>
-      <img src="/assets/icons/moon.svg" alt="Dark Mode" />
+
+      <img
+        class="light"
+        src="/assets/icons/moon.svg"
+        alt="Dark Mode"
+        onclick="toggleDarkmode();"
+      />
+      <img
+        class="dark"
+        src="/assets/icons/sun.svg"
+        alt="Light Mode"
+        onclick="toggleDarkmode();"
+      />
     </nav>
 
-    <section class="head">
-      <div class="container">
-        <h1 class="page-titles">Tzimom</h1>
-      </div>
-    </section>
+    <div class="container">
+      <section class="section head">
+        <img
+          class="head__image"
+          src="http://res.tzimom.de/images/simple-logo/transparent/blue.svg"
+          alt=""
+        />
+
+        <div class="head__body">
+          <h1 class="page-titles">Tzimom</h1>
+          <h2>Fullstack developer</h2>
+          <p>
+            High level experience in web design and backend server structure and
+            development.
+          </p>
+          <a class="button" href="#contact">Contact Me</a>
+        </div>
+      </section>
+    </div>
   </body>
 </html>

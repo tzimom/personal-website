@@ -1,4 +1,31 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+:root {
+  --color-background: #ffffff;
+  --color-text-1: #000000dd;
+  --color-text-2: #000000cf;
+  --color-text-3: #000000a5;
+  --color-primary-1: hsl(214, 50%, 35%);
+}
+
+:root.dark-mode {
+  --color-background: #2b2830;
+  --color-text-1: #ffffffff;
+  --color-text-2: #ffffffdd;
+  --color-text-3: #ffffffc9;
+}
+
+body {
+  background-color: var(--color-background);
+}
+
+:root.dark-mode .light {
+  display: none;
+}
+
+:root:not(.dark-mode) .dark {
+  display: none;
+}
+
 .pointer {
   cursor: pointer;
 }
@@ -25,14 +52,37 @@ body {
 
 h1 {
   font-weight: 600;
+  color: var(--color-text-1);
+  font-size: 2rem;
+}
+
+h2 {
+  font-weight: 500;
+  color: var(--color-text-3);
+  font-size: 1.25rem;
 }
 
 p {
   font-weight: 400;
+  color: var(--color-text-2);
+  font-weight: 1rem;
+}
+
+.button {
+  display: inline-block;
+  padding: 0.8em 1.5em;
+  color: #ffffffcc;
+  font-size: 1rem;
+  font-weight: 500;
+  border: none;
+  outline: none;
+  background-color: var(--color-primary-1);
+  border-radius: 0.75em;
 }
 
 .container {
-  padding: 0 1rem;
+  padding: 0 1.5rem;
+  margin: 0 auto;
   max-width: 65rem;
 }
 
@@ -41,9 +91,11 @@ p {
   bottom: 0;
   left: 0;
   right: 0;
+  z-index: 10;
+  padding: 0.75rem 1.5rem;
+  background-color: var(--color-background);
   -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
           box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-  padding: 0.5rem 0.8rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -57,10 +109,49 @@ p {
 
 .main-nav .logo {
   font-weight: 500;
-  font-size: 0.8rem;
+  font-size: 1rem;
 }
 
 .main-nav img {
-  height: 1rem;
+  height: 1.5rem;
+}
+
+@media (min-width: 800px) {
+  .main-nav {
+    position: static;
+  }
+}
+
+.section {
+  height: 100vh;
+}
+
+.head {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: auto 1fr;
+      grid-template-rows: auto 1fr;
+      grid-template-areas: 'image' 'body';
+}
+
+.head__image {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: image;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  height: 15rem;
+}
+
+.head__body {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: body;
+}
+
+.head__body p {
+  margin: 1em 0;
 }
 /*# sourceMappingURL=main.css.map */

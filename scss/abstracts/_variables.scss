@@ -3,3 +3,21 @@ $font-weights: (
   'medium': 500,
   'bold': 600,
 );
+
+:root {
+  --color-background: #ffffff;
+
+  --color-text-1: #000000dd;
+  --color-text-2: #000000cf;
+  --color-text-3: #000000a5;
+
+  --color-primary-1: hsl(214, 50%, 35%);
+}
+
+:root.dark-mode {
+  --color-background: #2b2830;
+
+  --color-text-1: #ffffffff;
+  --color-text-2: #ffffffdd;
+  --color-text-3: #ffffffc9;
+}

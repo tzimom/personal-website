@@ -1,0 +1,13 @@
+.button {
+  display: inline-block;
+  padding: 0.8em 1.5em;
+
+  color: #ffffffcc;
+  font-size: 1rem;
+  font-weight: map-get($font-weights, 'medium');
+
+  border: none;
+  outline: none;
+  background-color: var(--color-primary-1);
+  border-radius: 0.75em;
+}

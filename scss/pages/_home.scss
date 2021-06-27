@@ -1,0 +1,21 @@
+.head {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr;
+  grid-template-areas: 'image' 'body';
+
+  &__image {
+    grid-area: image;
+    justify-self: center;
+
+    height: 15rem;
+  }
+
+  &__body {
+    grid-area: body;
+
+    p {
+      margin: 1em 0;
+    }
+  }
+}

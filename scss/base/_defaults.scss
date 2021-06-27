@@ -1,3 +1,15 @@
+body {
+  background-color: var(--color-background);
+}
+
+:root.dark-mode .light {
+  display: none;
+}
+
+:root:not(.dark-mode) .dark {
+  display: none;
+}
+
 .pointer {
   cursor: pointer;
 }
