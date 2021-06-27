@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: var(--color-background);
 }
@@ -8,6 +12,21 @@ body {
 
 :root:not(.dark-mode) .dark {
   display: none;
+}
+
+:target::before {
+  --scroll-offset: 25px;
+
+  content: '';
+  display: block;
+  height: var(--scroll-offset);
+  margin-top: calc(-1 * var(--scroll-offset));
+}
+
+@media (min-width: 800px) {
+  :target::before {
+    --scroll-offset: 150px;
+  }
 }
 
 .pointer {

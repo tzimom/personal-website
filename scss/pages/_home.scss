@@ -20,13 +20,11 @@
   }
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 800px) {
   .head {
     grid-template-columns: 1fr auto;
     grid-template-rows: 1fr;
     grid-template-areas: 'body image';
-
-    margin: 20vh 0;
 
     &__image {
       height: 25rem;
