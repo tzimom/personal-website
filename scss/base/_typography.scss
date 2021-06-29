@@ -24,6 +24,12 @@ h3 {
   font-size: 1.25rem;
 }
 
+h4 {
+  font-weight: #{map-get($font-weights, 'regular')};
+  color: var(--color-text-3);
+  font-size: 0.8rem;
+}
+
 p,
 a {
   font-weight: #{map-get($font-weights, 'regular')};
@@ -46,6 +52,10 @@ a {
 
   h3 {
     font-size: 1.5rem;
+  }
+
+  h4 {
+    font-size: 1rem;
   }
 
   p {

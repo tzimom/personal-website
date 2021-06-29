@@ -1,0 +1,38 @@
+{
+  "skills": [
+    {
+      "name": "Frontend development",
+      "time": 2,
+      "icon": "uil-brackets-curly",
+      "details": [
+        { "name": "HTML", "percentage": 85 },
+        { "name": "CSS", "percentage": 80 },
+        { "name": "SCSS", "percentage": 60 },
+        { "name": "JavaScript", "percentage": 70 }
+      ]
+    },
+    {
+      "name": "Backend development",
+      "time": 5,
+      "icon": "uil-server-network",
+      "details": [
+        { "name": "PHP", "percentage": 55 },
+        { "name": "Javascript", "percentage": 45 },
+        { "name": "Python", "percentage": 15 },
+        { "name": "Java", "percentage": 95 },
+        { "name": "C#", "percentage": 65 },
+        { "name": "C++", "percentage": 10 }
+      ]
+    },
+    {
+      "name": "Server configuration",
+      "time": 3,
+      "icon": "uil-server",
+      "details": [
+        { "name": "Minecraft Server", "percentage": 95 },
+        { "name": "Nginx / Apache", "percentage": 80 },
+        { "name": "Domain Management", "percentage": 65 }
+      ]
+    }
+  ]
+}
